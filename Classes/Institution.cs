@@ -1,23 +1,49 @@
+using System;
 using System.Collections.Generic;
 using GradeBook.Enums;
 
 namespace GradeBook.Classes {
     public class Institution {
+        #region PUBLIC
         public string InstitutionName;
         public string District;
+        #endregion
 
+        #region PRIVATE
+        // MAPS FOR DATA
         private readonly Dictionary<InstitutionCode, string> InstitutionNameMap = new();
         private readonly Dictionary<DistrictCode, string> DistrictMap = new();
         
-        public Institution(InstitutionCode _name, DistrictCode _district) {
+        // FOR THE RANDOM DATA
+        private readonly Random Institution_R = new();
+        private readonly Random District_R = new();
+        #endregion
+        
+        // CONSTRUCTOR
+        public Institution() {
             InitializeInstitutionNameMap();
             InitializeDistrictMap();
             
-            InstitutionName = InstitutionNameMap[_name];
-            District = DistrictMap[_district];
+            InstitutionName = InstitutionNameMap[GetRandomInstitution()];
+            District = DistrictMap[GetRandomDistrict()];
         }
 
+        #region RANDOM DATA FROM ENUMS
+        private InstitutionCode GetRandomInstitution() {
+            var institution = Enum.GetValues(typeof(InstitutionCode));
+            return (InstitutionCode) institution.GetValue(Institution_R.Next((institution.Length)));
+        }
+
+        private DistrictCode GetRandomDistrict() {
+            var district = Enum.GetValues(typeof(DistrictCode));
+            return (DistrictCode) district.GetValue(District_R.Next((district.Length)));
+        }
+        #endregion
+        
+        #region INITIALIZATION OF MAPS
         private void InitializeInstitutionNameMap() {
+            // THIS COULD BE A CALL TO A DATABASE INSTEAD OF HARDCODED DATA.
+            
             InstitutionNameMap.Add(InstitutionCode.AA,"Accelerated Academy");
             InstitutionNameMap.Add(InstitutionCode.SS,"Schooled In Success");
             InstitutionNameMap.Add(InstitutionCode.MU,"Meadows University");
@@ -44,10 +70,13 @@ namespace GradeBook.Classes {
         }
 
         private void InitializeDistrictMap() {
+            // THIS COULD BE A CALL TO A DATABASE INSTEAD OF HARDCODED DATA.
+            
             DistrictMap.Add(DistrictCode.HCSD, "Holmes County School District");
             DistrictMap.Add(DistrictCode.JCSD, "Jackson County School District");
             DistrictMap.Add(DistrictCode.LCSD, "Lafayette County School District");
             DistrictMap.Add(DistrictCode.MCSD, "Madison County School District");
         }
+        #endregion
     }
 }
