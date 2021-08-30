@@ -1,0 +1,15 @@
+/Users/joshuajudd/Desktop/dotNetDev/testApplications/gradebook/src/GradeBook/bin/Debug/net5.0/GradeBook.deps.json
+/Users/joshuajudd/Desktop/dotNetDev/testApplications/gradebook/src/GradeBook/bin/Debug/net5.0/GradeBook.runtimeconfig.json
+/Users/joshuajudd/Desktop/dotNetDev/testApplications/gradebook/src/GradeBook/bin/Debug/net5.0/GradeBook.runtimeconfig.dev.json
+/Users/joshuajudd/Desktop/dotNetDev/testApplications/gradebook/src/GradeBook/bin/Debug/net5.0/GradeBook.dll
+/Users/joshuajudd/Desktop/dotNetDev/testApplications/gradebook/src/GradeBook/bin/Debug/net5.0/ref/GradeBook.dll
+/Users/joshuajudd/Desktop/dotNetDev/testApplications/gradebook/src/GradeBook/bin/Debug/net5.0/GradeBook.pdb
+/Users/joshuajudd/Desktop/dotNetDev/testApplications/gradebook/src/GradeBook/obj/Debug/net5.0/GradeBook.csproj.AssemblyReference.cache
+/Users/joshuajudd/Desktop/dotNetDev/testApplications/gradebook/src/GradeBook/obj/Debug/net5.0/GradeBook.GeneratedMSBuildEditorConfig.editorconfig
+/Users/joshuajudd/Desktop/dotNetDev/testApplications/gradebook/src/GradeBook/obj/Debug/net5.0/GradeBook.AssemblyInfoInputs.cache
+/Users/joshuajudd/Desktop/dotNetDev/testApplications/gradebook/src/GradeBook/obj/Debug/net5.0/GradeBook.AssemblyInfo.cs
+/Users/joshuajudd/Desktop/dotNetDev/testApplications/gradebook/src/GradeBook/obj/Debug/net5.0/GradeBook.csproj.CoreCompileInputs.cache
+/Users/joshuajudd/Desktop/dotNetDev/testApplications/gradebook/src/GradeBook/obj/Debug/net5.0/GradeBook.dll
+/Users/joshuajudd/Desktop/dotNetDev/testApplications/gradebook/src/GradeBook/obj/Debug/net5.0/ref/GradeBook.dll
+/Users/joshuajudd/Desktop/dotNetDev/testApplications/gradebook/src/GradeBook/obj/Debug/net5.0/GradeBook.pdb
+/Users/joshuajudd/Desktop/dotNetDev/testApplications/gradebook/src/GradeBook/obj/Debug/net5.0/GradeBook.genruntimeconfig.cache
